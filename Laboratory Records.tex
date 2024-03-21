@@ -1,0 +1,142 @@
+\documentclass[a4paper, 12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage[a4paper]{geometry}
+\usepackage{enumitem}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{titlesec}
+
+\hypersetup{
+	colorlinks=true, 
+	linktoc=all,     
+	linkcolor=blue,
+	linktocpage
+}
+
+\titleformat{\section}[display]{\Large\bfseries\itshape}{}{0ex}
+{\rule{\textwidth}{0.3pt}\vspace{0ex}
+	\centering}[\vspace{-1ex}\rule{\textwidth}{0.3pt}]
+
+\titleformat{\subsection}[display]{\large\itshape}{}{0ex}{}[]
+
+\newcommand{\unnumberedsection}[1]{
+	\newpage
+	\phantomsection
+	\addcontentsline{toc}{section}{#1}
+	\section*{#1}}
+\renewcommand\thesubsection{\Roman{subsection}}
+
+\parindent0mm
+\parskip1.5ex plus0.5ex minus0.5ex
+
+
+
+\title{\rule{\textwidth}{1.5pt}\vspace{0ex}
+	Laboratory Records
+\vspace{-1ex}\rule{\textwidth}{1.5pt}}
+\author{Rahul Chavan}
+\date{Fall 2023}
+
+\begin{document}
+	
+	\begin{titlepage}
+		\maketitle
+		\thispagestyle{empty}
+		\newpage
+		\tableofcontents
+		\thispagestyle{empty}
+	\end{titlepage}
+	
+	\unnumberedsection{2nd october 2023}
+    \begin{center} \Large
+        \textbf{Gel extraction of PCR products}
+    \end{center} 
+
+	\subsubsection*{Principle}
+
+	
+	\unnumberedsection{4th october 2023}
+    \begin{center} \Large
+        \textbf{Transformation of yeast cells}
+    \end{center} 
+
+	\subsubsection*{Principle}
+
+   The competent cells are prepared fresh everytime before a transformation.
+   These fresh competent cells are then mixed with the plasmid DNA and then subjected to heat shock.
+   The heat shock causes the cells to take up the plasmid DNA.
+   The cells are then resuspended in PBS and plated on SC-His plates.
+   This is done as the deletion is done using His cassettes.
+   The deletions carried out are as follows:
+   \begin{itemize}
+    \item 009 - c-terminus - HOF1
+    \item 502 - c-terminus - HOF1
+    \item 502 - coil coil domain 
+    \item 502 - $SH_{3}$ domain.
+   \end{itemize}
+
+
+   \subsubsection*{General Protocol}
+   \begin{itemize}
+    \item Add 7.5 $\mu$l of plasmid DNA to 50 $\mu$l of competent cells.
+    \item Incubate in the hood for 15 minutes.
+    \item Add 300 $\mu$l of Li-PEG 
+    \item Incubate in the hood for 15 minutes.
+    \item Add 30 $\mu$l of DMSO.
+    \item Heat shock at 42$^{\circ}$C in dry bath for 15 minutes.
+    \item Centrifuge at 3200 rpm for 3 minutes.
+    \item Resuspend the pellet in 120 $\mu$l of PBS.
+   \end{itemize}
+
+   \unnumberedsection{16th october 2023}
+    \begin{center} \Large
+        \textbf{Master Class}
+    \end{center} 
+
+    The heat shock treatment for a temperature sensitive mutant is done at 30$^{\circ}$C overnight with DMSO. This is the lazy method.
+    \begin{itemize}
+        \item there are 3 collections in the lab - yeast, bacteria, plasmid.
+        \item whenever a strain is made, it is stored in the -80$^{\circ}$C freezer after adding it in 50\% glycerol 1 ml.
+        \item For s. pombe add yea+ 15\% glycerol 1 ml.
+        \item bacterial culture 50\% glycerol 500 $\mu$l + 1 ml of culture.
+        \item whenever a strain is made it can stay on the plate for maximum of 5 days.
+    \end{itemize}
+
+    \subsection*{Yeast Transformation}
+    We use S. cervisiae generally in the lab.
+    there are two mother strains - S288C and W303.
+    We use S288C in the lab and its commpetent cells can be used for a long time.
+    However, W303 is not so good and its competent cells have to be made fresh everytime.
+    As W303 is a genetically unstable strain.
+    BY4741 is also widely used.
+    
+    whenever strains are taken out of the -80 freezer, be quick and put them back as soon as possible.
+    Dont overuse -80 freezer.
+    Yeast transformations require Li-PEG and Li-sorb.
+    Li-PEG used in the lab is - 3350
+    Li-PEG and Li-Sorb are filter sterilized.
+    Sterile PBS.
+    ESM356 is a derivative of S288C and is white in colour.
+    YPH499 is pink in colour also a derivate of S288C , colour due to lack of adenine.
+
+X, Y, Z = (transformation of a) plasmid, tagging, deletion
+to overexpress- change the promoter, or put it in a vector which can take multiple copies.
+tagging - lets say we want to tag gene A with GFP/HA/mcherry
+one has to do 4 transformations- one for gfp, one for ha, one for mcherry and one for negative control.
+There are around 4993 orf in yeast genome.
+
+
+
+yeast- 1990's announced as model organism.
+EUROSCARF - collection of all the strains.
+PYM - where P stands for plasmid, Y stands for yeast and M stands for Michael.
+Yeast has high level of homologous recombination.
+
+
+    
+
+\end{document}

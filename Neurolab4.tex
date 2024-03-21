@@ -1,0 +1,332 @@
+\documentclass{report}
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{caption}
+\usepackage{multirow}
+
+
+\title{\textbf{UBL201-L Introductory Biology III - Neurobiology}}
+\author{Rahul Chavan - 22086}
+\date{20th November 2023}
+
+
+\usepackage[left=1in, right=1in, top=0.5in, bottom=0.5in]{geometry}
+\renewcommand{\maketitle}{
+ \begin{center}
+    \includegraphics[width=2cm]{IISc_Master_Seal_Black.jpg}
+    \vspace{0.5cm}
+
+    \Large
+    \textbf{\thetitle}
+    
+    \vspace{0.5cm}
+    
+    \Large
+    \theauthor
+    
+    \vspace{0.2cm}
+    
+    \large
+    \thedate
+
+    \vspace{0.5cm}
+
+    \hrule  
+    
+  \end{center}
+}
+
+\pgfplotsset{compat=1.18}
+\begin{document}
+\maketitle
+\begin{center}
+    \Large
+    \textbf{Psychophysics and cognition}
+\end{center} 
+
+%For your assignment, you need to describe the experiment, tell about the phenomenon you are testing and interpret the results you got.
+%Put all of these with the plots you have generated in a PDF and submit in the Lab 4 teams assignment channel. Mind your group!
+%Name your report as "[GroupID]_[last five digits of your S.R.No.]_UB201L4.pdf".  For Example: "GroupA_14889_UB201L4.pdf
+%Color Pop-out Task
+%Orientation Pop-out Task
+%Color-Orientation Conjunction Task
+%Color-Color Conjunction Task
+%Working Memory Task
+%Priming Task
+
+\subsection*{The experiment}
+This experiment is an introduction to psychophysics and cognition.
+
+Psychophysics quantitatively investigates the relationship between 
+physical stimuli and the sensations and perceptions they produce. 
+It has been described as the study of the 
+relation between stimulus and sensation or, more completely, as 
+the analysis of perceptual processes by studying the effect on a 
+subject's experience or behavior by systematically varying the 
+properties of a stimulus along one or more physical dimensions.
+
+Cognition is the mental action or process of acquiring knowledge 
+and understanding through thought, experience, and the senses. 
+It encompasses many aspects of intellectual functions and processes 
+such as attention, the formation of knowledge, memory and working 
+memory, judgment and evaluation, reasoning and computation, problem 
+solving and decision making, comprehension and production of language. 
+Cognitive processes use existing knowledge and generate new knowledge.
+
+In this experiment we study cognitive processes like visual 
+attention, working memory and priming. The experiment consists 
+of 6 tasks, each of which is designed to test a different aspect 
+of cognition.  The tasks are as follows:
+
+
+
+
+\begin{enumerate}
+    \item Color Pop-out Task
+    \item Orientation Pop-out Task
+    \item Color-Orientation Conjunction Task
+    \item Color-Color Conjunction Task
+    \item Working Memory Task
+    \item Priming Task
+\end{enumerate}
+
+The first four tasks are visual search tasks.
+
+Visual search is a type of perceptual task requiring 
+attention that typically involves an active scan of the 
+visual environment for a particular object or feature 
+(the target) among other objects or features (the distractors). 
+It has a limited capacity for information processing and the 
+ability to filter out unwanted information. The first two tasks 
+are feature search tasks; the next two tasks are conjunction search 
+tasks.
+
+The last two tasks are memory tasks that test the working memory 
+and priming. Priming is a phenomenon whereby exposure to one stimulus 
+influences a response to a subsequent stimulus, without conscious 
+guidance or intention. Working memory is a cognitive system with a 
+limited capacity that is responsible for temporarily holding information 
+available for processing.
+
+We will infer the cognitive processes from the reaction time and 
+accuracy of the subject in performing the tasks.
+
+
+
+
+%things to keep in mind while interpreting the results:
+%1. set size affect your accuracy and/or reaction time
+%2. difference in accuracy/reaction time in the case of presence or absence of targets.
+%3. why pop-ot takes less time than conjuction.
+
+
+\subsubsection{1. Color Pop-out Task}
+
+The color pop-out effect is a phenomenon in which a single feature, 
+such as color, is sufficient to guide attention to a target item, 
+regardless of the number of distractors or the similarity of the 
+distractors to the target. In our task we observed that one of the 
+objects pops out because of its dissimilarity to the other items, 
+which have the same color.
+
+
+
+
+\begin{figure}[htbp]  
+  \centering 
+  \includegraphics[width=1.0\textwidth]{Rahul Chavan_1_Colour-pop_10-Nov-2023.jpg} 
+  \caption{Plots for color pop-out task.}
+  \label{fig: colour pop-out} 
+\end{figure}
+
+This is bottom-up processing where the visual system can detect 
+these properties in parallel across the visual field. Here, the 
+number of distractors does not matter in both the cases where the 
+target is present and where the target is absent. This is concluded 
+by the fact that the reaction time and accuracy (probability correct) 
+is almost constant for different set sizes. A dip in the probability 
+correct for large set size is observed in the target present condition. 
+This could be due to the fatigue (impatience) of the subject and is not 
+of significant interest.
+
+
+\subsubsection{2. Orientation Pop-out Task}
+
+The orientation pop-out effect is a phenomenon in which a single 
+feature, such as orientation, is sufficient to guide attention to a 
+target item, regardless of the number of distractors or the 
+similarity of the distractors to the target.
+
+
+\begin{figure}[htbp]  
+  \centering 
+  \includegraphics[width=1.0\textwidth]{orient-pop.jpg} 
+  \caption{Plots for orientation pop-out task}
+  \label{fig: orientation pop-out} 
+\end{figure}
+
+In our task, when the color, length, and thickness of both 
+the target and distractors are same but only the orientation of 
+the distractors is different, the target pops out. Even with 
+distributed attention, a single target object should be detected 
+in the same amount of time, no matter how many distractors are present
+
+In fact, the reaction time in target present condition decreased 
+in the sets with more distractors. This could be due the 
+fact that the distractors are more similar to each other than to 
+the target, making it easier to detect the target and also because 
+the subject is more attentive in the target present condition and 
+has strategized to recognize it faster, which should not be hard as 
+the target continuously pops out. 
+
+Here again, the number of distractors 
+does not matter in both the cases where the target is present and where 
+the target is absent, which is concluded by the fact that the reaction 
+time and accuracy (probability correct) is almost constant for different 
+set sizes (except for some errors in target absent condition leading 
+to a dip in probability correct and can be accounted for by subject fatigue).
+
+
+
+\subsubsection{3. Color-Orientation Conjunction Task}
+
+The color-orientation conjunction effect is a phenomenon in which a 
+single feature, such as color or orientation, is not sufficient to 
+guide attention to a target item, but both features are required to 
+guide attention to a target item. Here, the target is dissimilar 
+from distractors in both color and orientation.
+
+
+\begin{figure}[htbp]  
+  \centering 
+  \includegraphics[width=1.0\textwidth]{conj-pop.jpg} 
+  \caption{Plots for color-orientation conjunction task}
+  \label{fig: color-orientation conjunction} 
+\end{figure}
+
+We observe that on increasing the set size, the reaction time increases. 
+This is serial search where we search for individual objects and try to 
+match with the target until we exhaust all possibilities to conclude 
+that the target is not present in the display. 
+
+We also observe that errors occur at large set sizes in both target 
+present and target absent conditions. Also, the accuracy takes a dip 
+in both the conditions at large set sizes. Clearly, the number of 
+distractors does matter here. This is concluded by the fact that 
+the reaction time is not constant and is gradually increasing with 
+an increase in set sizes.
+
+
+
+
+
+
+\subsubsection{4. Color-Color Conjunction Task}
+
+The color-color conjunction effect is a phenomenon in which a 
+single feature, such as color, is not sufficient to guide attention 
+to a target item, but a combination of two colors is required to 
+guide attention to a target item. Here we are looking for a 
+particular color-color combination where red top - green bottom 
+rectangle is the target whilst the opposite are the distractors.
+
+\begin{figure}[htbp]  
+  \centering 
+  \includegraphics[width=1.0\textwidth]{Conj2-pop.jpg} 
+  \caption{Plots for color-color conjunction task}
+  \label{fig: color-color conjunction} 
+\end{figure}
+
+We observe that this task in general has a higher reaction time. 
+Also, the reaction time increases rapidly with an increase in set 
+size in both target present and target absent conditions, which 
+concludes that the number of distractors do matter here. 
+The accuracy, however, is not affected much by the set size 
+in both conditions. This is another example for serial search. 
+Searching for an opposite orientation of the two colors in a pool 
+of distractors with same colors is a difficult task, accounting for 
+the higher reaction time.
+
+
+
+\vspace{1cm}
+
+We can in general also conclude that the reaction time is higher in 
+conjunction search tasks than in feature search (pop-out) tasks. This is because 
+in feature search tasks, the target pops out and is easy to detect and 
+the visual field can be scanned in parallel, whereas in conjunction 
+search tasks, the target does not pop out and the visual field has to be 
+scanned serially to detect the target, causing a higher reaction time, 
+and making the task difficult. The accuracy should also ideally 
+decrease in conjunction search tasks as the distractors are more 
+similar to the target than in feature search tasks, but this is not 
+observed in our experiment and can be explained by the subject's 
+strategy (like compensating with a higher reaction time) and 
+attentiveness.
+
+
+\subsubsection{5. Working Memory Task}
+
+Working memory is a cognitive system with a limited capacity 
+that is responsible for temporarily holding information available 
+for processing. 
+
+\begin{figure}[htbp]  
+  \centering 
+  \includegraphics[width=1.0\textwidth]{Memory-search.jpg} 
+  \caption{Plots for working memory task}
+  \label{fig: working memory} 
+\end{figure}
+
+In our task, we were asked to remember the letters presented on 
+the screen and then search for their presence or absence on the 
+next screen. We observe that the reaction time increases with an 
+increase in set size in both target present and target absent conditions. 
+The number of errors and the reaction time for those errors also increases with an 
+increase in set size. We can also see that accuracy takes a dip with the increase 
+in set size in both target present and target absent conditions. 
+This is because the working memory has a limited 
+capacity and the more the number of items to be remembered, the more difficult 
+it is to remember them.
+
+
+
+\subsubsection{6. Priming Task}
+
+Priming is a phenomenon whereby exposure to one stimulus influences 
+a response to a subsequent stimulus, without conscious guidance or 
+intention. For example, the word NURSE is recognized more quickly 
+following the word DOCTOR than following the word BREAD. Priming 
+can be perceptual, semantic, or conceptual. It can also be positive, 
+negative, or affective in nature.
+
+
+\begin{figure}[htbp]  
+  \centering 
+  \includegraphics[width=1.0\textwidth]{Rahul Chavan_1_Priming_10-Nov-2023.jpg} 
+  \caption{Plots for priming task}
+  \label{fig: priming} 
+\end{figure}
+
+In our task, we were supposed to identify the presence of red 
+squares among green squares and green squares among red squares.
+
+If there is a sequence of red squares among green squares 
+followed by a green square among red squares or vice versa, 
+such trials are called switch trials.  Here, the targets may or 
+may not appear in the same position.
+
+What is interesting to note is that the reaction time for switch trials 
+is higher than that for non-switch trials. This is because the subject 
+is primed to look for a particular color and the reaction time is less 
+when the target appears at the same position. The reaction time is more 
+when the target appears at a different position as the subject has to 
+search for the target at all the positions. The accuracy is also less 
+for switch trials than for non-switch trials. These can also vary with 
+the subject's strategy and attentiveness.
+
+
+\end{document}

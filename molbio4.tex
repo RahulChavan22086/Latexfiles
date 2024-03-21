@@ -1,0 +1,146 @@
+\documentclass{report}
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{caption}
+\usepackage{multirow}
+\usepackage{amsmath}
+
+\title{\textbf{UBL201-L Introductory Biology III - Molecular Biology}}
+\author{Rahul Chavan - 22086}
+\date{26th October 2023}
+
+
+\usepackage[left=1in, right=1in, top=0.5in, bottom=0.5in]{geometry}
+\renewcommand{\maketitle}{
+ \begin{center}
+    \includegraphics[width=2cm]{IISc_Master_Seal_Black.jpg}
+    \vspace{0.5cm}
+
+    \Large
+    \textbf{\thetitle}
+    
+    \vspace{0.5cm}
+    
+    \Large
+    \theauthor
+    
+    \vspace{0.2cm}
+    
+    \large
+    \thedate
+
+    \vspace{0.5cm}
+
+    \hrule  
+    
+  \end{center}
+}
+
+\pgfplotsset{compat=1.18}
+\begin{document}
+\maketitle
+\begin{center}
+    \Large
+    \textbf{Plasmid DNA extraction from E.coli using Alkaline lysis method.}
+\end{center} 
+
+%Lab report: 
+%   Aim of the experiment
+%	Principle
+%	Results and Discussion: (i) Photograph of the gel electrophoresis with all bands clearly labelled
+%         (ii) Concentration of DNA and 260/280 ratio
+%        (iii) Discuss the results obtained and speculate on the potential source of error.
+%   Answer the following questions:
+
+\section*{Aim of the experiment:}
+\begin{itemize}
+  \item To extract plasmid DNA from E.coli cells using Alkaline lysis method.
+\end{itemize}
+
+\section*{Principle:}
+Plasmid DNA is the extra chromosomal DNA present in bacteria. It is circular in shape and is used as a vector for cloning genes. 
+The plasmid DNA extraction protocol is based on the alkaline lysis method. 
+We use three solutions for the extraction process:
+\begin{itemize}
+  \item Solution I: Resuspension Buffer - This contains Tris, EDTA, glucose, and RNase A.
+  Tris is a buffering agent and EDTA is a chelating agent that binds to Mg\textsuperscript{2+} ions and inhibits the activity of DNases.
+  Glucose helps in maintaining the osmotic pressure and RNase A degrades RNA.
+  \item Solution II: NaOH and SDS - NaOH denatures the DNA and SDS denatures the proteins.
+  \item Solution III: Potassium acetate - It neutralizes the pH and precipitates the proteins.
+\end{itemize}
+
+we have used the QIAprep® Spin Miniprep Kit, which is a spin column-based kit for the isolation of plasmid DNA from bacterial cells.
+The kit uses silica membrane technology to purify plasmid DNA.
+The plasmid DNA binds to the silica membrane in the presence of high salt concentration and is eluted in a low salt buffer.
+
+\section*{Results and Discussion:}
+We quantified the DNA using a Nanodrop spectrophotometer and the concentration of the DNA was found to be 351.1 ng/$\mu$l.
+The 260/280 ratio was found to be 1.86, which is close to the ideal value of 1.8, and the 260/230 ratio was found to be 2.16, 
+which is close to the ideal value of 2.0. This indicates that the DNA is pure and is free from contaminants(proteins and organic compunds or chaotropic salts respectively).
+The DNA was then run on an agarose gel and the gel was visualized under UV light.
+All observations are reported under the images section.
+
+\section*{Images:}
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=10cm]{nanodrop.jpg}
+    \caption*{Figure 1: Nanodrop spectrophotometer readings.} 
+\end{figure}
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=10cm]{gelresults.jpg}
+    \caption*{Figure 2: Agarose gel electrophoresis of the plasmid DNA.}
+\end{figure}
+The 2nd well is the ladder and the 4th well is my plasmid DNA.
+The different bands in the plasmid DNA are the different topological forms of the plasmid DNA.
+The supercoiled form is the most compact form of the plasmid DNA and migrates the fastest and is hence the bottom most band.
+The open circular form is less compact and migrates slower than the supercoiled form and is hence the middle band.
+The linear form is the least compact and migrates the slowest and is hence the top most band.
+
+We can see that the plasmid DNA is pure and is free from contaminants as there are no prominent smears in the gel.
+Hence, we can conclude that the plasmid DNA extraction was successful.
+
+\section*{Sources of error:}
+The plasmid DNA may not completely dissolved in the elution buffer. This could be due to the fact that the elution buffer was not preheated to 70\textsuperscript{o}C before adding it to the column.
+This could lead to a lower concentration of the plasmid DNA.
+There could also be some errors in the spectrophotometer readings due to which the concentration of the plasmid DNA could be lower than the actual value.
+There may also be some error in handling as my plasmid DNA was the only sample that showed a slight smear in the gel and also has the least concentration.
+
+\section*{Answer the following questions:}
+
+\subsubsection*{Question 1:}
+\textbf{What happens to genomic DNA during plasmid isolation that is also present in bacterial cells?}
+
+\subsubsection*{Answer:}
+The genomic DNA is denatured by the NaOH and SDS in solution II, however, unlike plasmid DNA, it does not reanneal in the presence of potassium acetate in solution III.
+It is scrambled and cannot be separated from the proteins and SDS and hence is precipitated along with the proteins.
+
+\subsubsection*{Question 2:}
+\textbf{How will vortexing after adding solution II affect the quality of your plasmid DNA?}
+
+\subsubsection*{Answer:}
+Solution II contains NaOH and SDS which denature the DNA and proteins respectively.
+Vortexing after adding solution II will lead to shearing of genomic DNA which will contaminate the plasmid DNA.
+This will lead to a lower concentration of the plasmid DNA.
+
+\subsubsection*{Question 3:}
+\textbf{Explain the principle behind salt and isopropanol precipitation of DNA, some protocol says ice-cold isopropanol increase the yield of DNA. Comment on how temperature influences precipitation.}
+
+\subsubsection*{Answer:}
+The principle behind salt and isopropanol precipitation of DNA is that
+the addition solvents such as isopropanol to an aqueous solution
+reduces the dielectric constant of the medium. This reduces the solubility of the DNA molecules in
+the solution, and the DNA molecules come together and form a solid precipitate which can be collected by centrifugation. Temperature influences precipitation in this process because
+lower temperatures favor the formation of DNA aggregates. At lower temperatures, the solubility
+of DNA in the aqueous solution is highly reduced which is
+why protocols often specify the use of ice-cold isopropanol.
+
+
+
+ 
+
+\end{document}

@@ -1,0 +1,218 @@
+\documentclass{report}
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{caption}
+\usepackage{multirow}
+\usepackage{amsmath}
+
+\title{\textbf{UBL201-L Introductory Biology III - Molecular Biology}}
+\author{Rahul Chavan - 22086}
+\date{18th October 2023}
+
+
+\usepackage[left=1in, right=1in, top=0.5in, bottom=0.5in]{geometry}
+\renewcommand{\maketitle}{
+ \begin{center}
+    \includegraphics[width=2cm]{IISc_Master_Seal_Black.jpg}
+    \vspace{0.5cm}
+
+    \Large
+    \textbf{\thetitle}
+    
+    \vspace{0.5cm}
+    
+    \Large
+    \theauthor
+    
+    \vspace{0.2cm}
+    
+    \large
+    \thedate
+
+    \vspace{0.5cm}
+
+    \hrule  
+    
+  \end{center}
+}
+
+\pgfplotsset{compat=1.18}
+\begin{document}
+\maketitle
+\begin{center}
+    \Large
+    \textbf{Competent Cell Preparation and Transformation}
+\end{center} 
+
+%Lab report: 
+
+%•      Title of the experiment 
+
+%•      Principle 
+
+%•      Results and Discussion: discuss the results and speculate on the potential
+%       source of error (Add a photograph of the transformed plate and calculate transformation efficiency).
+
+%•      Interpretation 
+
+%•      Precautions 
+
+%•      Answer the following questions:
+
+\section*{Aim of the experiment:}
+\begin{itemize}
+  \item To prepare E.coli TG1 competent cells and transform them with a plasmid containing the gene for ampicillin resistance.  
+  \item To check the transformation efficiency of the cells.
+\end{itemize}
+
+\section*{Principle:} 
+Bacterial transformation is a key technique which allows us to introduce foreign DNA into a bacterial host.
+This technique can be used to manipulate the genetic material of an organism, enabling the study of gene function,
+protein expression, and other aspects of molecular biology. 
+
+But for the cells to be transformed, they must be made competent to take up the foreign DNA.
+Comeptency is the ability of the cell to take up the DNA from the environment with ease.
+This is done by making the cell membrane more permeable by using various methods such as chemical treatment,
+heat shock, or electroporation. This process alters the cell membrane, making it more capable of taking up
+plasmid DNA from the surrounding environment.
+
+In our experiment we have used the chemical treatment method to make the cells competent.
+The cells are treated with a solution of calcium chloride, which neutralizes the repulsive negative
+charges on the DNA backbone and the cell membrane, allowing the DNA to enter the cell. Thus,
+the ice-cold CaCl2 solution facilitates binding of DNA to the surface of the cell. A sudden increase
+in temperature (heat shock) creates pores in the plasma membrane of the bacteria and allows for
+plasmid DNA to enter the bacterial cell. 
+
+To check for the successful introduction of foreign DNA, the transformed cells are typically selected
+using antibiotic resistance markers or other selection methods to identify cells that have taken up the desired DNA.
+This is done by plating the transformed cells on a medium containing the antibiotic.
+Only the cells that have taken up the plasmid will be able to grow on the medium, as the plasmid contains the gene for antibiotic resistance.
+
+The transformation efficiency is checked by counting the number of colonies that grow on the plate.
+
+\section*{Results and Discussion:}
+The competent cells were prepared using the chemical treatment method. The cells were stored in -80$^{\circ}$C freezer
+after flash freezing with liquid nitrogen. Next week the cells were thawed and transformed with a plasmid containing the gene for ampicillin resistance.
+The cells were then plated on a medium containing ampicillin. The plate was incubated overnight at 37$^{\circ}$C.
+The next day, the plate was observed for the presence of colonies. The plate was found to have around 1634 colonies.
+The transformation efficiency was calculated using the formula :
+\begin{equation}
+  \text{Transformation efficiency} = \frac{\text{cfu on plate}}{\text{ng of DNA}} \times {10^3}{\text ng/\mu g} \times {\text{final dilution}}   = cfu / \mu g   DNA
+\end{equation}
+
+\vspace{6cm}
+
+We have:
+\begin{itemize}
+  \item cfu on plate = 1634 (\textit{approximately})
+  \item ng of DNA = 100
+  \item final dilution = 5
+\end{itemize}
+
+Thus, the transformation efficiency is:
+\begin{equation}
+  \text{Transformation efficiency} = \frac{1634}{100} \times {10^3}{\text ng/\mu g} \times {5} = 817 \times {10^3} cfu / \mu g   DNA
+\end{equation}
+
+Hence, the transformation efficiency is 817 $\times$ 10$^3$ cfu / $\mu$g DNA.
+
+
+
+
+\section*{Images:}
+
+
+
+\begin{figure}[!ht]
+  \centering 
+  \includegraphics[width=0.4\textwidth]{Transformed cells.jpg} 
+  \caption{Transformed cells} 
+  \label{fig: transformed cells }  
+\end{figure}
+
+\begin{figure}[!ht]
+  \centering 
+  \includegraphics[width=0.4\textwidth]{negcontrol.jpg} 
+  \caption{Negative Control} 
+  \label{fig: negative control }  
+\end{figure}
+
+\vspace{10cm}
+
+We can clearly see the presence of colonies on the transformation plate and a clear negative control plate. This confirms that the cells have been transformed successfully
+without any contamination.
+
+However, the number of colonies growing on the plate is very high. This could be due to the fact that the cells were not diluted enough before plating.
+This has lead to the formation of a lawn at the center of the plate. We could have avoided this by diluting the cells more before plating or we could have taken a picture with only overnight incubation and not more (as our photos were taken in the early noon of next day).
+This could have led to the presence of multiple colonies in the same spot. This could have also led to the incorrect estimation of the transformation efficiency.
+
+\section*{Answer the following questions:}
+
+\subsubsection*{Question 1:}
+\textbf{Explain why it is important to prepare a competence cell at OD value 0.6 and what
+will happen if we dilute a culture of OD value 0.9, that is saturated culture with
+autoclaved medium to 0.6 OD and proceed with the protocol?}
+
+\subsubsection*{Answer:}
+The OD value of a culture is a measure of the number of cells in the culture.
+The OD value of around 0.6 is considered to be the optimum value for the preparation of competent cells. This is because the cells are in the mid-log phase of growth at this OD value.
+The cells are actively dividing and are in the most competent state at this OD value. This is also done to ensure that nearly all the cells are in the log phase of growth. 
+Unlike with a lower OD value where many of the cells have not begun actively dividing or with a higher OD value where many of the cells have stopped dividing and reached the stationary phase.
+
+The purpose of checking the OD value is to have an estimate of the number of cells and also to check at what stage of growth the cells are in. 
+If we dilute a culture of OD value 0.9 to 0.6 and proceed with the protocol, it defeats our purpose as the cells will not be in the log phase of growth but will be attaining the stationary phase of growth.
+Most of the cells will not be actively dividing and will not be in the most competent state. The OD value will be lowered only because of the addition of excess media, for the cells to actively start dividing
+again in the presence of fresh media we must let the cells grow for longer and then proceed with the protocol after a sufficient OD is reached. In this case
+however, the culture will also contain dead cells and debris. This will lead to a lower transformation efficiency.
+
+\subsubsection*{Question 2:}
+\textbf{Explain the role of calcium chloride in making bacterial cells competent and mediating transformation?}
+
+\subsubsection*{Answer:}
+The calcium chloride solution neutralizes the repulsive negative charges on the DNA backbone and the cell membrane
+by masking negative charges on both DNA as well as the on the bacterial outer membrane
+allowing the DNA to bind to the membrane and subsequently enter the cell on heat shock.
+The ice-cold $CaCl_2$ solution facilitates the congealing of lipid moieties which leads to the restriction of membrane 
+fluidity (weakening the cell surface structure) which strengthens calcium-cell surface interaction. 
+A sudden increase in temperature (heat shock) creates pores in the plasma membrane of the bacteria and allows for 
+plasmid DNA to enter the bacterial cell.
+The binding of calcium ions to the membrane also causes changes in the membrane permeability.
+$Ca^{2+}$ serves to produce static force of attraction within the DNA molecule.
+This leads to the folding of DNA into a compact ball-like structure that facilitates its entry into the cell.
+
+Therefore, $Ca^{2+}$ acts as a bridge between the cell membrane and the DNA, allowing the DNA to enter the cell.
+
+
+
+
+\subsubsection*{Question 3:}
+\textbf{What kind of error can happen if the plates with transformants are incubated for 
+a long time? This is a transformed plate, explain the reason behind the growth of E.coli in this manner. 
+(Note: Growing in LB Ampicillin plate)}
+
+\begin{figure}[!ht]
+  \centering 
+  \includegraphics[width=0.3\textwidth]{questiontransform.jpg} 
+  \caption{(Question 3)} 
+  \label{fig: growth of E.coli }  
+\end{figure}
+
+
+\subsubsection*{Answer:}
+
+The transformed colonies of cells contain the gene for antibiotic (here, ampicillin) resitantce. In our case, the cells have been transformed with a plasmid containing the gene
+encoding for $\beta$-lactamase enzyme which cleaves the $\beta$-lactam ring of ampicillin, rendering it ineffective. Thus, the transformed cells are able to grow on the medium containing ampicillin.
+
+If the plates with transformants are incubated for a long time, as shown in figure 3, the formation of satellite colonies can be observed.
+Satellite colonies are small colonies that grow around the main colony.
+These are non-transformed cells that have taken shelter in the zone of clearance created by the main colony by degrading ampicillin in the ambient medium
+and have grown there.
+
+Hence, the error of false positives can occur if the plates with transformants are incubated for a long time.
+
+
+
+\end{document}

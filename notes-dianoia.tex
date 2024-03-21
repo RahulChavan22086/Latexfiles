@@ -1,0 +1,68 @@
+\documentclass{report}
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{caption}
+\usepackage{multirow}
+
+
+\title{\textbf{Dianoia - The Pravega Debate Competition}}
+\author{Rahul Chavan - 22086}
+\date{20th November 2023}
+
+
+\usepackage[left=1in, right=1in, top=0.5in, bottom=0.5in]{geometry}
+\renewcommand{\maketitle}{
+ \begin{center}
+    \includegraphics[width=2cm]{IISc_Master_Seal_Black.jpg}
+    \vspace{0.5cm}
+
+    \Large
+    \textbf{\thetitle}
+    
+    \vspace{0.5cm}
+    
+    \Large
+    \theauthor
+    
+    \vspace{0.2cm}
+    
+    \large
+    \thedate
+
+    \vspace{0.5cm}
+
+    \hrule  
+    
+  \end{center}
+}
+
+\pgfplotsset{compat=1.18}
+\begin{document}
+\maketitle
+\begin{center}
+    \Large
+    \textbf{Anchoring Script}
+\end{center} 
+
+\begin{itemize}
+  \item 1. meet our Finalists- 3 min per person.
+  \item 2. parliamentary debate - 5 min prep, 1.5 min opening statements by both sides, rebuttal 1.5 mins, 
+      1/2 questions by judges/audience max of 1 min for answering. Concluding remarks 1 mins. We select two people by chits, toss a coin 
+      to decide for/against, then display the prompt.
+  \item 3. Group discussion - 12min speak 3 min think, 5 mins qns to all participants. 2 rounds , 10 min to eliminate 4
+  \item 4. Extempore - pick, 1 min think, 3 min speak. 5-6 min questions by judges. 1 gets eliminated here.
+  \item 5. Lunch Break
+  \item 6. Final round - 3 min thinking after the topic is chosen, 7 min interrupted speaking, moderated. 1 
+         question judges to each participant, and participants get to ask questions to 1 one person, and next set one question to opponents asking to each other
+         
+\end{itemize}
+
+\[S(t+1)=S(t)-\frac{\beta\cdot S(t) \cdot E(t)}{N}\]
+\[E(t+1)=E(t)+\frac{\beta\cdot S(t) \cdot E(t)}{N}-\sigma\cdot E(t)\]
+\[ I(t+1)=I(t)+\sigma \cdot E(t)-\gamma \cdot I(t)\]
+\[R(t+1)=R(t)+\gamma \cdot I(t)\]
+
+\end{document}

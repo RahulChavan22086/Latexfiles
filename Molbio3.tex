@@ -1,0 +1,203 @@
+\documentclass{report}
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{caption}
+\usepackage{multirow}
+\usepackage{amsmath}
+
+\title{\textbf{UBL201-L Introductory Biology III - Molecular Biology}}
+\author{Rahul Chavan - 22086}
+\date{26th October 2023}
+
+
+\usepackage[left=1in, right=1in, top=0.5in, bottom=0.5in]{geometry}
+\renewcommand{\maketitle}{
+ \begin{center}
+    \includegraphics[width=2cm]{IISc_Master_Seal_Black.jpg}
+    \vspace{0.5cm}
+
+    \Large
+    \textbf{\thetitle}
+    
+    \vspace{0.5cm}
+    
+    \Large
+    \theauthor
+    
+    \vspace{0.2cm}
+    
+    \large
+    \thedate
+
+    \vspace{0.5cm}
+
+    \hrule  
+    
+  \end{center}
+}
+
+\pgfplotsset{compat=1.18}
+\begin{document}
+\maketitle
+\begin{center}
+    \Large
+    \textbf{Is UvrB essential to repair UV-induced DNA damage in Escherichia coli?}
+\end{center} 
+
+%Lab report: 
+%   Aim of the experiment
+%	Principle
+%	Results and Discussion: discuss the results (Photograph of the plate) and speculate on the potential source of error.
+%   Answer the following questions:
+
+\section*{Aim of the experiment:}
+\begin{itemize}
+  \item To check if UvrB is essential for the repair of UV-induced DNA damage in E.coli cells.
+  \item To study the various kinds of mutations(damage) caused by different wavelengths of UV light. 
+  \item To study the various mechanisms by which DNA repair occurs post UV damage.
+\end{itemize}
+
+\section*{Principle:}
+The principle of this experiment is to study whether UvrB is indispensable for the dark repair (NER) of DNA
+damage induced by UV light.
+The UV light causes the formation of thymidine dimers in the DNA which do not fit into the double helix and hinder replication and gene expression. 
+One of the ways by which these thymidine dimers are repaired is by the UvrABC system. 
+The UvrABC system is a nucleotide excision repair system. The UvrA protein scans the DNA for the presence of thymine dimers. 
+The UvrB protein binds to the UvrA protein and the UvrC protein binds to the UvrB protein. The UvrC protein then cleaves 
+the DNA at the 8th phosphodiester bond from the 5' end and the 4th phosphodiester bond from the 3' end of the thymidine dimer. 
+The UvrD protein (a helicase) then removes the damaged DNA strand and the DNA polymerase I fills the gap. The DNA ligase then seals the nick. 
+The UvrB protein is essential for the repair of the thymine dimers. If the UvrB protein is not present, the thymidine dimers 
+will not be repaired and the cell will die (if other repair mechanisms are also impaired). 
+The UvrB protein is essential for the repair of UV-induced DNA damage in E.coli cells.
+
+The mechanism of photoreactivation is hindered in our experiment by performing it in the dark.
+
+
+
+
+\section*{Results and discussions:}
+We performed the experiment by making 10-fold serial dilutions up to 10\textsuperscript{-5} of both E.coli TG1 cells and
+E.coli TG1 $\Delta$UvrB cells and plating 2$\mu$l of each dilution on LB agar plates. The plates were then exposed to UV light for 0s, 5s, 10s and 15s and 20s.
+The plates were then incubated at 37$^{\circ}$C for 24 hours whilst ensuring darkness throughout the process such that photoreactivation is prevented. The results are shown in the table below:
+
+
+\begin{center}
+    \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+        \hline
+        \multirow{2}{*}{Concentration of E.coli cells} & \multicolumn{5}{c|}{Exposure: wild type} & \multicolumn{5}{c|}{Exposure: knockout} \\
+        \cline{2-11}
+         & 0s & 5s & 10s & 15s & 20s & 0s & 5s & 10s & 15s & 20s \\
+        \hline
+        10\textsuperscript{-1} & + & + & + & + & + & + & + & - & - & + \\
+        \hline
+        10\textsuperscript{-2} & + & + & + & + & + & + & - & - & - & - \\
+        \hline
+        10\textsuperscript{-3} & + & + & + & + & + & + & - & - & - & - \\
+        \hline
+        10\textsuperscript{-4} & + & + & + & + & - & + & - & - & - & - \\
+        \hline
+        10\textsuperscript{-5} & + & + & + & - & - & + & - & - & - & - \\
+        \hline
+        
+    \end{tabular}
+\end{center}
+
+The '+' sign indicates that the E.coli cells survived and the '-' sign indicates that the E.coli cells died(or did not grow).
+We can consistently see that the E.coli TG1 cells survived for most exposure times and the E.coli TG1 $\Delta$UvrB cells died for most exposure times.
+This shows that the UvrB protein is essential for the repair of UV-induced DNA damage in E.coli cells.
+
+
+
+
+\section*{Images:}
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=4cm]{molbiolab03_0s.jpg}
+    \caption*{Figure 1: E.coli TG1 and TG1 $\Delta$UvrB cells exposed to UV light for 0s}
+\end{figure}
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=4cm]{molbiolab03_05s.jpg}
+    \caption*{Figure 2: E.coli TG1 and TG1 $\Delta$UvrB cells exposed to UV light for 5s}
+\end{figure}
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=4cm]{molbiolab03_10s.jpg}
+    \caption*{Figure 3: E.coli TG1 and TG1 $\Delta$UvrB cells exposed to UV light for 10s}
+\end{figure}
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=4cm]{molbiolab03_15s.jpg}
+    \caption*{Figure 4: E.coli TG1 and TG1 $\Delta$UvrB cells exposed to UV light for 15s}
+\end{figure}
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=4cm]{molbiolab03_20s.jpg}
+    \caption*{Figure 5: E.coli TG1 and TG1 $\Delta$UvrB cells exposed to UV light for 20s}
+\end{figure}
+
+
+
+\section*{Sources of error:}
+
+There are certain dilutions in wild type cells which due not show growth.
+This is found only in very low diluutions, hence it can be attributed to lack of cells in the dilution due to which no growth was observed.
+
+However, in the case of the knockout cells, there are certain dilutions which show growth.
+This has occured in cells with high concentrations. This can be attributed to the fact that the cells were not exposed to UV light properly as they 
+were shielded by other cells due to high cell number.
+
+In case of 20s exposure, the cells were exposed to UV light for 20s but they were also exposed to the light for a few seconds while the plate was being removed from the hood.
+This could have caused the cells to repair the damage caused by the UV light and hence show growth. Again this has occured in cells with high concentrations.
+
+
+
+
+
+\section*{Answer the following questions:}
+
+\subsubsection*{Question 1:}
+\textbf{How does nucleotide excision repair differ from photoreactivation?}
+
+\subsubsection*{Answer:}
+Nucleotide excision repair is a mechanism by which DNA damage is repaired by removing the damaged DNA strand and replacing it with a new strand.
+The NER mechanism is controlled by the UvrABC system.
+First, a UvrA-UvrB complex scans the DNA, with the UvrA subunit recognizing distortions in the helix,
+caused for example by pyrimidine dimers. When the complex recognizes such a distortion, 
+the UvrA subunit leaves and an UvrC protein comes in and binds to the UvrB monomer and, hence, forms a new UvrBC dimer. 
+DNA helicase II (or UvrD) then comes in and removes the excised segment by actively breaking 
+the hydrogen bonds between the complementary bases. The resultant gap is then filled in using DNA polymerase I and DNA ligase
+
+
+Whereas, photoreactivation is a mechanism by which DNA damage is repaired by breaking the thymidine dimers using light of wavelength 380-500nm.
+It is controlled by DNA photolyases which recognize the “kink” in the DNA, and bind to the site. When excited by blue light (380-500 nm wavelength), the photolyase along with its co-factor FADH- 
+traps the energy from photons and transfers it to pyrimidine dimer and eventually break apart the dimer.
+
+Hence, the main difference between NER and photoreactivation is that NER is a dark repair mechanism whereas photoreactivation is a light repair mechanism
+where different enzymes are used to repair the damage caused by UV light.
+
+
+
+
+
+
+
+\subsubsection*{Question 2:}
+\textbf{Which DNA polymerase is used in nucleotide excision repair (Both in prokaryotes and mammalian cells)?}
+
+\subsubsection*{Answer:}
+In prokaryotes, DNA polymerase I (although $\kappa$ or III can also substitute for it) is used in nucleotide excision repair whereas
+in eukaryotes, DNA polymerase $\delta$, $\epsilon$ and/or $\kappa$ are used in nucleotide excision repair.
+
+
+
+
+\end{document}
